@@ -1,0 +1,63 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 5rem;
+  flex-direction: column;
+}
+.container img {
+  width: 75px;
+  height: 75px;
+}
+.container .message {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  font-size: 25px;
+  font-weight: 900;
+}
+.container .game {
+  padding: 20px;
+}
+.container .game .entry {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  margin-bottom: 15px;
+}
+.container .game .entry label {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+.container .game .entry input {
+  width: 350px;
+  height: 40px;
+  border: 1px solid grey;
+  outline: none;
+  border-radius: 8px;
+  text-indent: 15px;
+  font-size: 20px;
+}
+.container .game button {
+  width: 100%;
+  height: 40px;
+  font-size: 20px;
+  border: none;
+  background-color: gray;
+  color: white;
+  border-radius: 8px;
+  cursor: pointer;
+}
+.container .game button:disabled {
+  cursor: not-allowed;
+  background-color: #da2626;
+}
+
+/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,60 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 5rem;
+    flex-direction: column;
+    img{
+        width: 75px;
+        height: 75px;
+    }
+    .message{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+        font-size: 25px;
+        font-weight: 900;
+    }
+    .game{
+        padding: 20px;
+        .entry{
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+            margin-bottom: 15px;
+            label{
+                font-size: 20px;
+                margin-bottom: 10px;
+            }
+            input{
+                width: 350px;
+                height: 40px;
+                border: 1px solid grey;
+                outline: none;
+                border-radius: 8px;
+                text-indent: 15px;
+                font-size: 20px;
+            }
+        }
+        button{
+            width: 100%;
+            height: 40px;
+            font-size: 20px;
+            border: none;
+            background-color: gray;
+            color: white;
+            border-radius: 8px;
+            cursor: pointer;
+            &:disabled{
+                cursor: not-allowed;
+                background-color: #da2626;
+            }
+        }
+    }
+}
